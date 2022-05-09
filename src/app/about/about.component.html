@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <h1 class="display-4">About,Component world!</h1>
+    <table class="table w-75 m-auto text-center">
+      <thead>
+          <th>name</th>
+          <th>age</th>
+          <th>gender</th>
+          <th>dateOfBirth</th>
+  
+      </thead>
+      <tbody>
+          <tr *ngFor="let user of aboutContainer">
+              <td>{{user.name|gender:user.gender}}</td>
+              <td>{{user.age}}</td>
+              <td>{{user.gender}}</td>
+              <td>{{user.dateOfBirth|date:'short'}}</td>
+  
+          </tr>
+      </tbody>
+  </table>    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </div>
